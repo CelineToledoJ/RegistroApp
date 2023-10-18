@@ -1,0 +1,21 @@
+<ion-content>
+    <div class="container">
+        <div class="box">
+            <div class="top-header">
+                <h3>Bienvenido, {{ correoUsuario }}</h3>
+                <small>Para registrar tu asistencia, haz click en el boton  para encender tu cámara y escanear el codigo QR.</small>
+            </div>
+            <div>
+                <ion-button class="button-animated"  expand="full" type="submit" color="primary" (click)="startScan()">Escanear</ion-button>
+            </div>
+            <a href="/api">
+                <img  src="/assets/gif_pochacco.gif" alt="">
+            </a>
+            <div>
+                <ion-button class="button-animated"  expand="full" type="submit" color="primary" (click)="cerrarSesion()">Cerrar Sesión</ion-button>
+            </div>
+        </div>
+    </div>
+</ion-content>
+  
+  
